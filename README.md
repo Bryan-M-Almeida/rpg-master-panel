@@ -4,6 +4,11 @@
 
 ---
 
+# Fotos e vídeos
+
+https://github.com/user-attachments/assets/63c7af75-e54d-4d25-8902-182c55767a55
+
+
 # 🚀 Funcionalidades
 
 - 📋 Cadastro e gerenciamento de personagens
