@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 Funcionalidades
+# 🚀 Funcionalidades
 
 - 📋 Cadastro e gerenciamento de personagens
 - 🗺️ Organização de cenários e locais
@@ -14,7 +14,7 @@
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+# 🛠️ Tecnologias Utilizadas
 
 - **Node.js** com **Express** para o backend
 - **EJS** para renderização de páginas
@@ -23,7 +23,7 @@
 
 ---
 
-## ⚙️ Instalação e Uso
+# ⚙️ Instalação e Uso
    ```bash
 1. Clone o repositório:
    git clone https://github.com/Bryan-M-Almeida/rpg-master-panel.git
@@ -41,9 +41,9 @@
 ```
 ---
 
-##📌 Contribuições
+# 📌 Contribuições
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 ---
 
-##📄 Licença
+# 📄 Licença
 Este projeto está licenciado sob a MIT License.
