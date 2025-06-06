@@ -6,8 +6,21 @@
 
 # Fotos e vídeos
 
-https://github.com/user-attachments/assets/63c7af75-e54d-4d25-8902-182c55767a55
+![rpg](https://github.com/user-attachments/assets/ada6a3c5-c435-4142-a1a8-971981911e31)
 
+![rpg 2](https://github.com/user-attachments/assets/1b0b1925-1c08-40d2-a1dc-1c80ab7affde)
+
+![rpg 3](https://github.com/user-attachments/assets/8b8c327e-c213-4aef-9ed5-63b66cf776e1)
+
+![rpg 4](https://github.com/user-attachments/assets/b4647c6b-e7ac-4304-986c-ecda2b4904f4)
+
+![rpg 5](https://github.com/user-attachments/assets/e9658fc2-2daa-4df3-bac5-368ef9987107)
+
+![gerando](https://github.com/user-attachments/assets/6244fa53-1f18-48d0-803b-7c043eaadc1d)
+
+![rpg 6](https://github.com/user-attachments/assets/aaf07f7f-8c05-49ae-b472-cbae4bb7e0a7)
+
+---
 
 # 🚀 Funcionalidades
 
