@@ -34,10 +34,11 @@
 
 # 🛠️ Tecnologias Utilizadas
 
-- **Node.js** com **Express** para o backend
-- **EJS** para renderização de páginas
-- **MongoDB** para armazenamento de dados
-- **Bootstrap** para estilização responsiva
+- **Express** para o backend
+- JS
+- CSS
+- HTML
+- IA local (Ollama)
 
 ---
 
@@ -56,6 +57,40 @@
   npm start
 
 5. Acesse a aplicação em http://localhost:3000
+```
+---
+
+# 🧠 Integração com IA Local (Ollama)
+
+Este projeto suporta geração de conteúdo via IA local, utilizando o Ollama, sem depender de APIs externas ou serviços pagos.
+
+# ✅ Requisitos
+
+Ollama instalado
+
+Um modelo baixado (ex: llama3, mistral, codellama)
+
+Projeto rodando localmente
+
+# 🚀 Como Usar a IA Ollama
+
+ ```bash
+
+# Instale o Ollama (caso ainda não tenha):
+
+curl -fsSL https://ollama.com/install.sh | sh
+
+# Baixe um modelo (exemplo com o LLaMA 3):
+
+ollama pull llama3
+
+# Inicie o modelo:
+
+ollama run llama3
+Isso vai iniciar o servidor local.
+
+# Resultado:
+A IA vai gerar a história do seu personagem.
 ```
 ---
 
