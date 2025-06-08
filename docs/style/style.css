@@ -1,0 +1,286 @@
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ========== BASE ========== */
+body {
+    background: #0d0d0d url('https://www.transparenttextures.com/patterns/dark-leather.png');
+    color: #111;
+    font-family: 'Cinzel Decorative', serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========== HEADER ========== */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background: linear-gradient(to bottom, #3a2517, #5e3c25);
+    border-bottom: 3px solid #aaa;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #5c3d2e;
+    text-shadow: none;
+}
+
+.subtitulo {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* ========== MAIN ========== */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* ========== PAINEL ========== */
+.painel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.painel-card {
+    background: #492106;
+    border: 2px solid #644100;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+}
+
+.painel-card:hover {
+    background: #000000;
+    transform: scale(1.05);
+}
+
+.painel-card h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #f0c97d;
+}
+
+.painel-card p {
+    font-size: 0.95em;
+    color: #ccc;
+}
+
+.painel-card.animar-entrada {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.painel-card.clicado {
+    opacity: 0.6;
+    transform: scale(0.95);
+    pointer-events: none;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #3a2517, #5e3c25);
+    border-top: 2px solid #aaa;
+    color: #444;
+    font-size: 0.9em;
+}
+
+/* ========== LINKS ========== */
+a,
+p {
+    text-decoration: none;
+    color: #888;
+    justify-self: center;
+    transition: 0.6s;
+}
+
+a p:hover {
+    scale: 1.1;
+}
+
+/* ========== TUTORIAL ========== */
+#btnTutorial {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #5c3d2e;
+    color: #fff;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#tutorialBox {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 300px;
+    background-color: #0d0d0d;
+    border: 2px solid #5c3d2e;
+    border-radius: 10px;
+    padding: 16px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 14px;
+    color: #3a2a1b;
+    display: none;
+    z-index: 999;
+}
+
+#tutorialBox.ativo {
+    display: block;
+}
+
+#tutorialBox h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #3a2a1b;
+}
+
+#tutorialBox ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+#tutorialBox ul li {
+    margin-bottom: 8px;
+}
+
+/* ========== INPUT DE BUSCA ========== */
+#busca {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #999;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#busca:focus {
+    border-color: #444;
+    outline: none;
+    box-shadow: 0 0 10px rgba(100, 100, 255, 0.3);
+}
+
+/* ========== BOTÃO TEMA ESCURO ========== */
+#toggleTheme {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #222;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease;
+}
+
+#toggleTheme:hover {
+    background: #555;
+}
+
+/* ========== TOAST ========== */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: fadeInOut 3s ease-in-out;
+    z-index: 9999;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+    }
+
+    10%,
+    90% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+}
+
+/* ========== DARK MODE ========== */
+body.dark {
+    background: #1a1a1a;
+    color: #ddd;
+}
+
+body.dark .painel-card {
+    background: #333;
+    border-color: #555;
+}
+
+body.dark .painel-card:hover {
+    background: #000000;
+    transform: scale(1.05);
+}
+
+body.dark #busca {
+    background: #2a2a2a;
+    color: #fff;
+    border-color: #555;
+}
+
+body.dark header {
+    background: linear-gradient(to bottom, #1b1a19, #080806);
+    border-bottom: 3px solid #444;
+}
+
+body.dark footer {
+    background: linear-gradient(to bottom, #1b1a19, #080806);
+    border-top: 2px solid #444;
+    color: #888;
+}
+
+body.dark #tutorialBox {
+    background-color: #0d0d0d;
+    border-color: #5c3d2e;
+    color: #f5f5dc;
+}
+
+body.dark #tutorialBox h3 {
+    color: #ddb66b;
+}

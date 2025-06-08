@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Master Panel</title>
+
+    <!-- Fontes e Estilos -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/tutorial.css">
+    <!-- Ícone -->
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1800/1800233.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>🛡️ RPG Master Panel ⚔️</h1>
+        <p class="subtitulo">O seu grimório digital de personagens, monstros e aventuras.</p>
+    </header>
+
+    <button id="toggleTheme">🌙</button>
+
+    <input type="text" id="busca" placeholder="🔍 Buscar seção..." />
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="painel">
+            <div class="painel-card" data-url="personagens.html">
+                <h2>📜 Personagens</h2>
+                <p>Veja e gerencie todos os heróis do seu mundo.</p>
+            </div>
+
+            <div class="painel-card" data-url="npcs.html">
+                <h2>👥 NPCs</h2>
+                <p>Cidadãos, vilões, comerciantes e aliados secundários.</p>
+            </div>
+
+            <div class="painel-card" data-url="monstros.html">
+                <h2>🐉 Monstros</h2>
+                <p>Feras, criaturas e entidades mágicas prontas para batalha.</p>
+            </div>
+
+            <div class="painel-card" data-url="eventos.html">
+                <h2>📖 Eventos</h2>
+                <p>Encontros, armadilhas e missões do seu universo.</p>
+            </div>
+
+            <div class="painel-card" data-url="gerador.html">
+                <h2>🧙‍♂️ Forjar Herói</h2>
+                <p>Crie um aventureiro único com atributos épicos e habilidades lendárias.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Botão do Tutorial -->
+    <button id="btnTutorial" onclick="toggleTutorial()">❓ Tutorial</button>
+
+    <!-- Caixa de Tutorial -->
+    <div id="tutorialBox">
+        <h3>📖 Como usar o painel</h3>
+        <ul>
+            <li><strong>📜 Personagens:</strong> Crie e edite seus personagens principais.</li>
+            <li><strong>👥 NPCs:</strong> Adicione personagens secundários com funções no mundo.</li>
+            <li><strong>🐉 Monstros:</strong> Selecione criaturas para batalhas e encontros.</li>
+            <li><strong>📖 Eventos:</strong> Planeje histórias, armadilhas e reviravoltas.</li>
+            <li><strong>🧙‍♂️ Forjar Herói:</strong> Gere um personagem automaticamente com poderes aleatórios.</li>
+        </ul>
+        <p>Clique novamente no botão ❓ para fechar.</p>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <a href="https://github.com/Bryan-M-Almeida">
+            <p>Feito por Bryan 🧙 • 2025</p>
+        </a>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
